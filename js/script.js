@@ -23,6 +23,7 @@ const picutres = [
     }
 ];
 
+
 /* ----- FUNZIONI ----- */
 // Funzione che crea un contenitore di immagini
 function createImgDiv(imgSrc) {
@@ -70,7 +71,7 @@ picutres.forEach((element, i) => {
     }
 });
 
-// Seleziona i Bottoni
+// Seleziona i bottoni
 const leftButton = document.querySelector('.button-left');
 const rightButton = document.querySelector('.button-right');
 
