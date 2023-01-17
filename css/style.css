@@ -3,4 +3,154 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}   
+}
+
+/* REGOLE GENERALI */
+section {
+    position: relative;
+
+    height: 100vh;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CAROSELLO */
+#carousel {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60%;
+    height: 70%;
+    
+    background-color: #0000FF;
+}
+
+#carousel img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 80% 30%;
+}
+
+/* SLIDES */
+#slides {
+    position: relative;
+
+    height: 80%;
+
+    background-color: #FF0000;
+}
+
+#slides .slide {
+    display: none;
+
+    height: 100%;
+
+    background-color: #FFFF00;
+}
+
+#slides .slide.current {
+    display: block;
+}
+
+/* INFO SLIDE */
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 1rem 2rem;
+
+    text-align: end;
+
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text p {
+    width: 70%;
+
+    margin-top: 1rem;
+}
+
+/* BARRA DI NAVIGAZIONE */
+#navbar {
+    position: relative;
+
+    height: 20%;
+
+    background-color: #00FF00;
+}
+
+/* MINIATURE */
+#thumbnails {
+    display: flex;
+    
+    height: 100%;
+    
+    background-color: #000000;
+}
+
+#thumbnails .thumb {
+    position: relative;
+
+    width: 20%;
+    height: 100%;
+
+    opacity: 0.6;
+    background-color: #F0F0F0;
+}
+
+#thumbnails .thumb.current {
+    border: 3px solid #D3D3D3;
+    opacity: 1;
+}
+
+
+/* BOTTONI */
+
+#buttons {
+    background-color: #FF0000;
+}
+
+#buttons .button-left, #buttons .button-right {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    z-index: 1;
+
+    width: 45px;
+    height: 45px;
+
+    line-height: 45px;
+    text-align: center;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    
+    cursor: pointer;
+}
+
+#buttons .button-left {
+    left: 1rem;
+}
+
+#buttons .button-right {
+    right: 1rem;
+}
