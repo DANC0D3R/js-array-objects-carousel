@@ -20,7 +20,7 @@ const picutres = [
         title: "Marvel's Avengers",
         image: 'img/05.webp',
         text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
-    }
+    },
 ];
 
 
@@ -64,6 +64,7 @@ picutres.forEach((element, i) => {
     // Crea una miniatura
     const thumb = createImgDiv(element.image);
     thumb.classList.add('thumb');
+    thumb.style.width = (100 / picutres.lenght) + '%'; // Imposta la dimensione delle slide in percentuale in base al numero di slide nell'array
     thumbnails.append(thumb);
     // Assegna allaprima la classe "current"
     if(i == 0) {

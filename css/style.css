@@ -109,13 +109,13 @@ section {
     width: 20%;
     height: 100%;
 
-    opacity: 0.6;
+    filter: brightness(50%);
     background-color: #F0F0F0;
 }
 
 #thumbnails .thumb.current {
     border: 3px solid #D3D3D3;
-    opacity: 1;
+    filter: brightness(100%);
 }
 
 
